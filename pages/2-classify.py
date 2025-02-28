@@ -19,9 +19,9 @@ if st.button('Analyze'):
   predictions
   '#'
   if(len(predictions.keys())==2):
-    '#### positive' if predictions['positive'] > predictions['negative'] else '#### negative'
+    '#### prediction: positive' if predictions['positive'] > predictions['negative'] else '#### prediction: negative'
   elif(len(predictions.keys())==1):
-    f'#### {list(predictions.keys())[0]}'
+    f'#### prediction: {list(predictions.keys())[0]}'
   else:
-    '#### NaN'
+    '#### prediction: NaN'
 
