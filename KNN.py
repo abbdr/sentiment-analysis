@@ -4,7 +4,7 @@ import re
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import nltk
 from nltk.corpus import stopwords
-# nltk.download('stopwords')
+nltk.download('stopwords')
 
 stop_words = set(stopwords.words('indonesian'))
 factory = StemmerFactory()
