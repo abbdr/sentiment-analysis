@@ -17,4 +17,11 @@ if st.button('Analyze'):
   predictions = knn.predict([find_sentiment])
   '#### Hasil: '
   predictions
+  '#'
+  if(len(predictions.keys())==2):
+    '#### positive' if predictions['positive'] > predictions['negative'] else '#### negative'
+  elif(len(predictions.keys())==1):
+    f'#### {list(predictions.keys())[0]}'
+  else:
+    '#### NaN'
 
