@@ -125,8 +125,7 @@ class KNN:
 
       result = np.array(ready_test['Sentiment'][:self.k])
       unique, counts = np.unique(result, return_counts=True)
-      print(counts)
-      result_count = dict(zip(unique, counts))
+      result_count = dict(zip(unique, list(counts)))
       print(f'{result_count} -> {sentence}')
 
       predictions.append(result_count)
