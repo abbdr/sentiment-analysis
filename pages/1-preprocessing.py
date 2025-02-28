@@ -72,4 +72,9 @@ with st.echo():
 '### Setelah Preprocessing'
 post
 
+'''
+#
+#
+'''
+
 st.page_link('pages/2-classify.py', label='klasifikasi')
