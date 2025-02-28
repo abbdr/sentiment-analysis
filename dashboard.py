@@ -15,7 +15,6 @@ X_train, y_train, X_test, y_test = train_test_split(post)
 #### Dihitung menggunakan Cosine Similarity, salah satu metode untuk mengetahui kemiripan antarkalimat
 #### Setiap kalimat diberikan pembobotan dengan menggunakan metode TF IDF (Terms Frequeny - Inverse Document Frequency)
 #
-#
 '''
 
 st.page_link('pages/1-preprocessing.py', label='preprocessing')
