@@ -131,6 +131,6 @@ class KNN:
 
       predictions.append(result_count)
   
-    return terms, term_frequencies, inverse_document_frequencies, tf_idf, cosine_similarity, ready_test, predictions
+    return ready_test, predictions
 
   
