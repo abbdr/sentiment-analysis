@@ -14,7 +14,9 @@ find_sentiment = st.text_input('')
 if st.button('Analyze'):
   knn = KNN.KNN()
   knn.fit(X_train, y_train)
-  predictions, ready_test = knn.predict([find_sentiment])
+  terms, term_frequencies, inverse_document_frequencies, tf_idf, cosine_similarity, predictions, ready_test = knn.predict([find_sentiment])
+  data = pd.DataFrame(term_frequencies)
+  data
   predictions = predictions[0]
   ready_test
   '#'
