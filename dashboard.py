@@ -17,4 +17,8 @@ X_train, y_train, X_test, y_test = train_test_split(post)
 #
 '''
 
+post
+
+'#'
+
 st.page_link('pages/1-preprocessing.py', label='preprocessing')
