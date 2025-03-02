@@ -122,6 +122,7 @@ class KNN:
       ready_test = pd.concat({'Tweets' : pd.Series(cosine_similarity), 'Sentiment' : pd.Series(self.y_train)}, axis=1)
       ready_test = ready_test.query('Tweets > 0')
       ready_test = ready_test.sort_values(by=['Tweets'], ascending=False)
+      ready_test
 
       result = np.array(ready_test['Sentiment'][:self.k])
       unique, counts = np.unique(result, return_counts=True)
