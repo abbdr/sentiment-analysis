@@ -9,6 +9,7 @@ post = pd.read_csv('clean_tweets.csv')
 X_train, y_train, X_test, y_test = train_test_split(post)
 
 test = pd.DataFrame(X_test)
+test = test.rename(columns={0:'Data Test'})
 test
 
 '### Tulis Sesuatu Tentang Pilkada DKI Jakarta: '
