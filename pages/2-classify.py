@@ -14,9 +14,11 @@ find_sentiment = st.text_input('')
 if st.button('Analyze'):
   knn = KNN.KNN()
   knn.fit(X_train, y_train)
-  predictions = knn.predict([find_sentiment])[0]
+  predictions, ready_test = knn.predict([find_sentiment])
+  ready_test
+  '#'
   '#### Hasil: '
-  predictions
+  predictions[0]
   '#'
   if(len(predictions.keys())==2):
     '#### prediction: positive' if predictions['positive'] > predictions['negative'] else '#### prediction: negative'
