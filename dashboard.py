@@ -11,7 +11,7 @@ X_train, y_train, X_test, y_test = train_test_split(post)
 '## Sentiment Analysis Menggunakan Dataset Pilkada DKI Jakarta'
 
 '''
-#### Menggunakan ALgoritma K-Nearest Neighbor
+#### Menggunakan Algoritma K-Nearest Neighbor
 #### Dihitung menggunakan Cosine Similarity, salah satu metode untuk mengetahui kemiripan antarkalimat
 #### Setiap kalimat diberikan pembobotan dengan menggunakan metode TF IDF (Terms Frequeny - Inverse Document Frequency)
 #
