@@ -8,11 +8,6 @@ post = pd.read_csv('clean_tweets.csv')
 
 X_train, y_train, X_test, y_test = train_test_split(post)
 
-test = pd.DataFrame(X_test)
-test = test.rename(columns={0:'Data Test'})
-# test['Label'] = y_test
-test
-pd.DataFrame(y_test)
 '### Tulis Sesuatu Tentang Pilkada DKI Jakarta: '
 find_sentiment = st.text_input('')
 
