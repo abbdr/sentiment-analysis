@@ -6,7 +6,6 @@ from KNN import train_test_split
 
 post = pd.read_csv('dataset_tweet_sentiment_pilkada_DKI_2017.csv')
 
-X_train, y_train, X_test, y_test = train_test_split(post)
 
 '## Sentiment Analysis Menggunakan Dataset Pilkada DKI Jakarta'
 
